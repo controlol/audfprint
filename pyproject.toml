@@ -11,3 +11,11 @@ dependencies = [
     "psutil>=7.2.2",
     "scipy>=1.17.0",
 ]
+
+[tool.setuptools]
+py-modules = [
+  "audfprint",
+]
+
+[project.scripts]
+audfprint = "audfprint:main"
