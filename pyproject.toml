@@ -1,0 +1,13 @@
+[project]
+name = "audfprint"
+version = "0.1.0"
+description = "Landmark-based audio fingerprinting."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "docopt>=0.6.2",
+    "joblib>=1.5.3",
+    "numpy>=2.4.2",
+    "psutil>=7.2.2",
+    "scipy>=1.17.0",
+]
