@@ -22,11 +22,11 @@ import multiprocessing
 import joblib
 
 # The actual analyzer class/code
-import audfprint_analyze
+from . import audfprint_analyze
 # Access to match functions, used in command line interface
-import audfprint_match
+from . import audfprint_match
 # My hash_table implementation
-import hash_table
+from . import hash_table
 
 
 if sys.version_info[0] >= 3:
@@ -389,8 +389,10 @@ Options:
 __version__ = 20150406
 
 
-def main(argv):
+def main(argv=None):
     """ Main routine for the command-line interface to audfprint """
+    if argv is None:
+        argv = sys.argv
     # Other globals set from command line
     args = docopt.docopt(USAGE, version=__version__, argv=argv[1:])
 

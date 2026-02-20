@@ -21,9 +21,9 @@ try:
 except:
     pass
 
-import audfprint_analyze
-import audio_read
-import stft
+from . import audfprint_analyze
+from . import audio_read
+from . import stft
 
 
 def process_info():
